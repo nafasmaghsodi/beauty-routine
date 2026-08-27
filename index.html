@@ -1,14 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Beauty Routine</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            color: #333;
+        }
+
+        header {
+            background-color: white;
+            padding: 25px 15px;
+            text-align: center;
+            border-bottom: 1px solid #f0dce3;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #d96b91;
+        }
+
+        header p {
+            margin: 8px 0 0;
+            color: #777;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .welcome h2 {
+            color: #c95780;
+            font-size: 28px;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h3 {
+            color: #d96b91;
+            font-size: 21px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .routine {
+            margin-top: 45px;
+        }
+
+        .routine h2 {
+            text-align: center;
+            color: #c95780;
+        }
+
+        .routine-box {
+            background-color: white;
+            margin-top: 20px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .routine-box h3 {
+            color: #d96b91;
+        }
+
+        .routine-box li {
+            margin: 12px 0;
+        }
+
+        footer {
+            margin-top: 40px;
+            background-color: white;
+            padding: 25px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Beauty Routine</h1>
-    <p>Skincare, Makeup and Self Care</p>
+    <header>
+
+        <h1>Beauty Routine</h1>
+
+        <p>Skincare • Makeup • Self Care</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#skincare">Skincare</a>
+            <a href="#makeup">Makeup</a>
+            <a href="#routine">Routine</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="welcome" id="home">
+
+            <h2>Welcome to Beauty Routine</h2>
+
+            <p>
+                Simple ideas for skincare, makeup and everyday self care.
+            </p>
+
+        </section>
+
+
+        <section class="sections">
+
+            <div class="card" id="skincare">
+
+                <h3>Skincare</h3>
+
+                <p>
+                    Learn about simple skincare steps
+                    for your daily routine.
+                </p>
+
+            </div>
+
+
+            <div class="card" id="makeup">
+
+                <h3>Makeup</h3>
+
+                <p>
+                    Discover simple makeup ideas
+                    for different occasions.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Self Care</h3>
+
+                <p>
+                    Take some time for yourself
+                    and build healthy habits.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="routine" id="routine">
+
+            <h2>Daily Routine</h2>
+
+
+            <div class="routine-box">
+
+                <h3>Morning Routine</h3>
+
+                <ol>
+                    <li>Clean your face gently.</li>
+                    <li>Use a moisturizer.</li>
+                    <li>Use sunscreen during the day.</li>
+                </ol>
+
+            </div>
+
+
+            <div class="routine-box">
+
+                <h3>Night Routine</h3>
+
+                <ol>
+                    <li>Remove makeup if you wore any.</li>
+                    <li>Clean your face gently.</li>
+                    <li>Use moisturizer.</li>
+                </ol>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>Beauty Routine © 2026</p>
+
+    </footer>
 
 </body>
+
 </html>
